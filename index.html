@@ -1,0 +1,1635 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Explore 304 speculative decoding Method Profiles through Draft Source, Draft Geometry, Verification Fidelity, and Runtime Execution."
+    >
+    <meta name="theme-color" content="#17365d">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Speculative Decoding Method Profiles">
+    <meta
+      property="og:description"
+      content="Filter, inspect, and compare the 304 four-aspect Method Profiles accompanying a systems co-design survey of speculative decoding."
+    >
+    <meta name="twitter:card" content="summary">
+    <title>Speculative Decoding Method Profiles</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/explorer.css">
+    <script type="module" src="assets/explorer.js"></script>
+  </head>
+
+  <body
+    data-matrix-source="data/coding_matrix.json"
+    data-default-sort="date-desc"
+    data-page-size="25"
+  >
+    <a class="skip-link" href="#matrix-results">Skip to Method Profiles</a>
+
+    <noscript>
+      <div class="no-js-notice" role="status">
+        <div class="page-frame no-js-notice__inner">
+          <strong>Interactive filtering requires JavaScript.</strong>
+          <span>
+            You can still
+            <a href="README.md">browse the full Method Profiles list</a>.
+          </span>
+        </div>
+      </div>
+    </noscript>
+
+    <header class="site-header" id="site-header">
+      <div class="page-frame site-header__inner">
+        <a class="brand" href="./" aria-label="Speculative Decoding Method Profiles home">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-copy__title">Speculative Decoding</span>
+            <span class="brand-copy__subtitle">Method Profiles</span>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#taxonomy-landscape">Taxonomy</a>
+          <a href="#methodology">About</a>
+          <a class="site-nav__download" href="#explorer">
+            Explore profiles
+          </a>
+          <a
+            class="site-nav__icon-link"
+            href="https://github.com/LifeIsSoSolong/awesome-speculative-decoding"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Open the project repository on GitHub"
+          >
+            GitHub
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="overview" aria-labelledby="page-title">
+        <div class="page-frame hero__inner">
+          <div class="hero__copy">
+            <p class="eyebrow">Open survey companion</p>
+            <h1 id="page-title">Explore speculative decoding by mechanism.</h1>
+            <p class="hero__lede">
+              Filter and compare Method Profiles across four systems co-design
+              aspects—without turning the taxonomy into a ranking.
+            </p>
+            <p class="hero__paper">
+              Companion to
+              <a href="https://www.preprints.org/manuscript/PREPRINT-LINK-PENDING">
+                <cite>From Draft-Then-Verify to Systems Co-Design: A Survey of
+                Speculative Decoding for Autoregressive Large Language Models</cite>
+              </a>
+            </p>
+            <p class="hero__meta" aria-label="Review summary">
+              <span><strong id="hero-work-count">304</strong> included works</span>
+              <span aria-hidden="true">·</span>
+              <span><strong>19</strong> taxonomy categories</span>
+              <span aria-hidden="true">·</span>
+              <span id="hero-date-range">2018–2026</span>
+            </p>
+          </div>
+
+          <div class="hero__instrument" aria-label="Start exploring Method Profiles">
+            <form class="search-form" id="matrix-search-form" role="search">
+              <label for="matrix-search">Search Method Profiles</label>
+              <div class="search-control">
+                <span class="search-control__glyph" aria-hidden="true"></span>
+                <input
+                  id="matrix-search"
+                  name="query"
+                  type="search"
+                  autocomplete="off"
+                  placeholder="Search short name or paper title…"
+                  data-filter-key="query"
+                >
+                <button
+                  class="search-control__clear"
+                  id="search-clear"
+                  type="button"
+                  data-action="clear-search"
+                  hidden
+                >
+                  Clear
+                </button>
+                <button class="search-control__submit" type="submit">
+                  Search
+                </button>
+              </div>
+            </form>
+
+            <div class="preset-group" aria-labelledby="preset-label">
+              <span class="preset-group__label" id="preset-label">Research paths</span>
+              <div class="preset-list" id="preset-list">
+                <button
+                  class="preset-chip"
+                  type="button"
+                  data-preset="latest"
+                  data-preset-query="sort=date-desc"
+                >
+                  Latest works
+                </button>
+                <button
+                  class="preset-chip"
+                  type="button"
+                  data-preset="2026-tree"
+                  data-preset-query="year=2026&amp;geometry=tree&amp;status=all&amp;sort=date-desc"
+                >
+                  2026 · Tree
+                </button>
+                <button
+                  class="preset-chip"
+                  type="button"
+                  data-preset="distribution-exact"
+                  data-preset-query="verification=distribution-level-exactness&amp;status=all"
+                >
+                  Distribution-Level Exactness
+                </button>
+                <button
+                  class="preset-chip"
+                  type="button"
+                  data-preset="serving-systems"
+                  data-preset-query="runtime=serving-systems&amp;status=all"
+                >
+                  Serving Systems
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="taxonomy-landscape"
+        id="taxonomy-landscape"
+        aria-labelledby="taxonomy-landscape-title"
+      >
+        <div class="page-frame">
+          <div class="section-heading section-heading--landscape">
+            <div>
+              <p class="section-kicker">Four-axis lens</p>
+              <h2 id="taxonomy-landscape-title">A systems co-design landscape</h2>
+            </div>
+            <p>
+              Each work may instantiate more than one category within an
+              aspect. Select an aspect to move directly to its filters.
+            </p>
+          </div>
+
+          <div class="axis-landscape" role="group" aria-label="Taxonomy axes">
+            <button
+              class="axis-card"
+              type="button"
+              data-axis="draftSource"
+              data-axis-jump="draftSource"
+            >
+              <span class="axis-card__index">01</span>
+              <span class="axis-card__body">
+                <strong>Draft Source</strong>
+                <span>Where candidate content originates</span>
+              </span>
+              <span class="axis-card__count">7 categories</span>
+            </button>
+
+            <button
+              class="axis-card"
+              type="button"
+              data-axis="draftGeometry"
+              data-axis-jump="draftGeometry"
+            >
+              <span class="axis-card__index">02</span>
+              <span class="axis-card__body">
+                <strong>Draft Geometry</strong>
+                <span>What candidate structure reaches verification</span>
+              </span>
+              <span class="axis-card__count">4 categories</span>
+            </button>
+
+            <button
+              class="axis-card"
+              type="button"
+              data-axis="verificationFidelity"
+              data-axis-jump="verificationFidelity"
+            >
+              <span class="axis-card__index">03</span>
+              <span class="axis-card__body">
+                <strong>Verification Fidelity</strong>
+                <span>What correctness or approximation contract is kept</span>
+              </span>
+              <span class="axis-card__count">4 categories</span>
+            </button>
+
+            <button
+              class="axis-card"
+              type="button"
+              data-axis="runtimeExecution"
+              data-axis-jump="runtimeExecution"
+            >
+              <span class="axis-card__index">04</span>
+              <span class="axis-card__body">
+                <strong>Runtime Execution</strong>
+                <span>How state, control, serving, and performance connect</span>
+              </span>
+              <span class="axis-card__count">4 categories</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="explorer-section"
+        id="explorer"
+        aria-labelledby="explorer-title"
+        data-explorer-root
+      >
+        <div class="page-frame explorer-section__heading">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Method Profiles</p>
+              <h2 id="explorer-title">Build a taxonomy-guided reading set</h2>
+            </div>
+            <p>
+              Combine aspects with AND; select multiple categories within one
+              aspect with OR.
+            </p>
+          </div>
+        </div>
+
+        <div class="page-frame explorer-layout">
+          <aside
+            class="filter-panel"
+            id="filter-sidebar"
+            aria-labelledby="filter-sidebar-title"
+          >
+            <form id="filter-form" data-filter-form>
+              <div class="filter-panel__header">
+                <div>
+                  <p class="filter-panel__eyebrow">Refine corpus</p>
+                  <h3 id="filter-sidebar-title">Filters</h3>
+                </div>
+                <button
+                  class="text-button"
+                  id="clear-all-filters"
+                  type="reset"
+                  data-action="clear-all-filters"
+                >
+                  Clear all
+                </button>
+              </div>
+
+              <div class="filter-groups" id="filter-groups" data-filter-groups>
+                <details
+                  class="filter-group"
+                  id="filter-group-year"
+                  data-filter-group="year"
+                  open
+                >
+                  <summary>
+                    <span>Publication year</span>
+                    <span class="filter-group__summary-count" data-selected-count="year"></span>
+                  </summary>
+                  <fieldset>
+                    <legend class="visually-hidden">Filter by publication year</legend>
+                    <div class="facet-list">
+                      <label class="facet-option" for="year-2026">
+                        <input
+                          id="year-2026"
+                          name="year"
+                          type="checkbox"
+                          value="2026"
+                          data-filter-key="year"
+                        >
+                        <span>2026</span>
+                        <span class="facet-count" data-facet-count="year:2026">103</span>
+                      </label>
+                      <label class="facet-option" for="year-2025">
+                        <input
+                          id="year-2025"
+                          name="year"
+                          type="checkbox"
+                          value="2025"
+                          data-filter-key="year"
+                        >
+                        <span>2025</span>
+                        <span class="facet-count" data-facet-count="year:2025">112</span>
+                      </label>
+                      <label class="facet-option" for="year-2024">
+                        <input
+                          id="year-2024"
+                          name="year"
+                          type="checkbox"
+                          value="2024"
+                          data-filter-key="year"
+                        >
+                        <span>2024</span>
+                        <span class="facet-count" data-facet-count="year:2024">75</span>
+                      </label>
+                      <label class="facet-option" for="year-2023">
+                        <input
+                          id="year-2023"
+                          name="year"
+                          type="checkbox"
+                          value="2023"
+                          data-filter-key="year"
+                        >
+                        <span>2023</span>
+                        <span class="facet-count" data-facet-count="year:2023">11</span>
+                      </label>
+                      <label class="facet-option" for="year-2022">
+                        <input
+                          id="year-2022"
+                          name="year"
+                          type="checkbox"
+                          value="2022"
+                          data-filter-key="year"
+                        >
+                        <span>2022</span>
+                        <span class="facet-count" data-facet-count="year:2022">2</span>
+                      </label>
+                      <label class="facet-option" for="year-2018">
+                        <input
+                          id="year-2018"
+                          name="year"
+                          type="checkbox"
+                          value="2018"
+                          data-filter-key="year"
+                        >
+                        <span>2018</span>
+                        <span class="facet-count" data-facet-count="year:2018">1</span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </details>
+
+                <details
+                  class="filter-group"
+                  id="filter-group-draft-source"
+                  data-filter-group="draftSource"
+                  data-axis="draftSource"
+                  open
+                >
+                  <summary>
+                    <span>Draft Source</span>
+                    <span
+                      class="filter-group__summary-count"
+                      data-selected-count="draftSource"
+                    ></span>
+                  </summary>
+                  <fieldset>
+                    <legend class="visually-hidden">Filter by Draft Source</legend>
+                    <div class="facet-list">
+                      <label class="facet-option" for="source-autoregressive-external">
+                        <input
+                          id="source-autoregressive-external"
+                          name="source"
+                          type="checkbox"
+                          value="autoregressive-external-drafter"
+                          data-filter-axis="draftSource"
+                          data-leaf="autoregressive-external-drafter"
+                        >
+                        <span>Autoregressive External Drafter</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="draftSource:autoregressive-external-drafter"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="source-semi-autoregressive-external">
+                        <input
+                          id="source-semi-autoregressive-external"
+                          name="source"
+                          type="checkbox"
+                          value="semi-autoregressive-external-drafter"
+                          data-filter-axis="draftSource"
+                          data-leaf="semi-autoregressive-external-drafter"
+                        >
+                        <span>Semi-Autoregressive External Drafter</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="draftSource:semi-autoregressive-external-drafter"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="source-non-autoregressive-external">
+                        <input
+                          id="source-non-autoregressive-external"
+                          name="source"
+                          type="checkbox"
+                          value="non-autoregressive-external-drafter"
+                          data-filter-axis="draftSource"
+                          data-leaf="non-autoregressive-external-drafter"
+                        >
+                        <span>Non-Autoregressive External Drafter</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="draftSource:non-autoregressive-external-drafter"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="source-target-path-reuse">
+                        <input
+                          id="source-target-path-reuse"
+                          name="source"
+                          type="checkbox"
+                          value="target-path-reuse"
+                          data-filter-axis="draftSource"
+                          data-leaf="target-path-reuse"
+                        >
+                        <span>Target-Path Execution</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="draftSource:target-path-reuse"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="source-direct-token-readout">
+                        <input
+                          id="source-direct-token-readout"
+                          name="source"
+                          type="checkbox"
+                          value="direct-token-readout"
+                          data-filter-axis="draftSource"
+                          data-leaf="direct-token-readout"
+                        >
+                        <span>Target-Feature Readout</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="draftSource:direct-token-readout"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="source-state-evolving">
+                        <input
+                          id="source-state-evolving"
+                          name="source"
+                          type="checkbox"
+                          value="state-evolving-drafter"
+                          data-filter-axis="draftSource"
+                          data-leaf="state-evolving-drafter"
+                        >
+                        <span>Proposal-State Modeling</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="draftSource:state-evolving-drafter"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="source-context-derived">
+                        <input
+                          id="source-context-derived"
+                          name="source"
+                          type="checkbox"
+                          value="context-derived-nonparametric-source"
+                          data-filter-axis="draftSource"
+                          data-leaf="context-derived-nonparametric-source"
+                        >
+                        <span>Context-Derived Nonparametric Source</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="draftSource:context-derived-nonparametric-source"
+                        ></span>
+                      </label>
+                      <label class="facet-option facet-option--muted" for="source-not-fixed">
+                        <input
+                          id="source-not-fixed"
+                          name="source"
+                          type="checkbox"
+                          value="unclassified"
+                          data-filter-axis="draftSource"
+                          data-leaf="unclassified"
+                        >
+                        <span>Not fixed by the research unit</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="draftSource:unclassified"
+                        ></span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </details>
+
+                <details
+                  class="filter-group"
+                  id="filter-group-draft-geometry"
+                  data-filter-group="draftGeometry"
+                  data-axis="draftGeometry"
+                  open
+                >
+                  <summary>
+                    <span>Draft Geometry</span>
+                    <span
+                      class="filter-group__summary-count"
+                      data-selected-count="draftGeometry"
+                    ></span>
+                  </summary>
+                  <fieldset>
+                    <legend class="visually-hidden">Filter by Draft Geometry</legend>
+                    <div class="facet-list">
+                      <label class="facet-option" for="geometry-chain">
+                        <input
+                          id="geometry-chain"
+                          name="geometry"
+                          type="checkbox"
+                          value="chain"
+                          data-filter-axis="draftGeometry"
+                          data-leaf="chain"
+                        >
+                        <span>Chain</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="draftGeometry:chain"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="geometry-block">
+                        <input
+                          id="geometry-block"
+                          name="geometry"
+                          type="checkbox"
+                          value="block"
+                          data-filter-axis="draftGeometry"
+                          data-leaf="block"
+                        >
+                        <span>Block</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="draftGeometry:block"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="geometry-tree">
+                        <input
+                          id="geometry-tree"
+                          name="geometry"
+                          type="checkbox"
+                          value="tree"
+                          data-filter-axis="draftGeometry"
+                          data-leaf="tree"
+                        >
+                        <span>Tree</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="draftGeometry:tree"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="geometry-collection">
+                        <input
+                          id="geometry-collection"
+                          name="geometry"
+                          type="checkbox"
+                          value="collection"
+                          data-filter-axis="draftGeometry"
+                          data-leaf="collection"
+                        >
+                        <span>Collection</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="draftGeometry:collection"
+                        ></span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </details>
+
+                <details
+                  class="filter-group"
+                  id="filter-group-verification-fidelity"
+                  data-filter-group="verificationFidelity"
+                  data-axis="verificationFidelity"
+                  open
+                >
+                  <summary>
+                    <span>Verification Fidelity</span>
+                    <span
+                      class="filter-group__summary-count"
+                      data-selected-count="verificationFidelity"
+                    ></span>
+                  </summary>
+                  <fieldset>
+                    <legend class="visually-hidden">
+                      Filter by Verification Fidelity
+                    </legend>
+                    <div class="facet-list">
+                      <label class="facet-option" for="verification-token">
+                        <input
+                          id="verification-token"
+                          name="verification"
+                          type="checkbox"
+                          value="token-level-exactness"
+                          data-filter-axis="verificationFidelity"
+                          data-leaf="token-level-exactness"
+                        >
+                        <span>Token-Level Exactness</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="verificationFidelity:token-level-exactness"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="verification-distribution">
+                        <input
+                          id="verification-distribution"
+                          name="verification"
+                          type="checkbox"
+                          value="distribution-level-exactness"
+                          data-filter-axis="verificationFidelity"
+                          data-leaf="distribution-level-exactness"
+                        >
+                        <span>Distribution-Level Exactness</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="verificationFidelity:distribution-level-exactness"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="verification-bounded">
+                        <input
+                          id="verification-bounded"
+                          name="verification"
+                          type="checkbox"
+                          value="bounded-approximation"
+                          data-filter-axis="verificationFidelity"
+                          data-leaf="bounded-approximation"
+                        >
+                        <span>Bounded Approximation</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="verificationFidelity:bounded-approximation"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="verification-relaxed">
+                        <input
+                          id="verification-relaxed"
+                          name="verification"
+                          type="checkbox"
+                          value="relaxed-acceptance"
+                          data-filter-axis="verificationFidelity"
+                          data-leaf="relaxed-acceptance"
+                        >
+                        <span>Relaxed Acceptance</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="verificationFidelity:relaxed-acceptance"
+                        ></span>
+                      </label>
+                      <label
+                        class="facet-option facet-option--muted"
+                        for="verification-not-fixed"
+                      >
+                        <input
+                          id="verification-not-fixed"
+                          name="verification"
+                          type="checkbox"
+                          value="unclassified"
+                          data-filter-axis="verificationFidelity"
+                          data-leaf="unclassified"
+                        >
+                        <span>Not fixed by the research unit</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="verificationFidelity:unclassified"
+                        ></span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </details>
+
+                <details
+                  class="filter-group"
+                  id="filter-group-runtime-execution"
+                  data-filter-group="runtimeExecution"
+                  data-axis="runtimeExecution"
+                  open
+                >
+                  <summary>
+                    <span>Runtime Execution</span>
+                    <span
+                      class="filter-group__summary-count"
+                      data-selected-count="runtimeExecution"
+                    ></span>
+                  </summary>
+                  <fieldset>
+                    <legend class="visually-hidden">Filter by Runtime Execution</legend>
+                    <div class="facet-list">
+                      <label class="facet-option" for="runtime-state">
+                        <input
+                          id="runtime-state"
+                          name="runtime"
+                          type="checkbox"
+                          value="state-management"
+                          data-filter-axis="runtimeExecution"
+                          data-leaf="state-management"
+                        >
+                        <span>State Management</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="runtimeExecution:state-management"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="runtime-control">
+                        <input
+                          id="runtime-control"
+                          name="runtime"
+                          type="checkbox"
+                          value="speculation-control"
+                          data-filter-axis="runtimeExecution"
+                          data-leaf="speculation-control"
+                        >
+                        <span>Speculation Control</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="runtimeExecution:speculation-control"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="runtime-serving">
+                        <input
+                          id="runtime-serving"
+                          name="runtime"
+                          type="checkbox"
+                          value="serving-systems"
+                          data-filter-axis="runtimeExecution"
+                          data-leaf="serving-systems"
+                        >
+                        <span>Serving Systems</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="runtimeExecution:serving-systems"
+                        ></span>
+                      </label>
+                      <label class="facet-option" for="runtime-performance">
+                        <input
+                          id="runtime-performance"
+                          name="runtime"
+                          type="checkbox"
+                          value="performance-analysis"
+                          data-filter-axis="runtimeExecution"
+                          data-leaf="performance-analysis"
+                        >
+                        <span>Performance Analysis</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="runtimeExecution:performance-analysis"
+                        ></span>
+                      </label>
+                      <label class="facet-option facet-option--muted" for="runtime-not-fixed">
+                        <input
+                          id="runtime-not-fixed"
+                          name="runtime"
+                          type="checkbox"
+                          value="unclassified"
+                          data-filter-axis="runtimeExecution"
+                          data-leaf="unclassified"
+                        >
+                        <span>Not fixed by the research unit</span>
+                        <span
+                          class="facet-count"
+                          data-facet-count="runtimeExecution:unclassified"
+                        ></span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </details>
+
+                <fieldset class="filter-group filter-group--fieldset" data-filter-group="status">
+                  <legend>Contribution role</legend>
+                  <p class="filter-help">
+                    Match a category wherever it appears, or restrict results by
+                    its role in the work.
+                  </p>
+                  <div class="segmented-control" id="role-filter">
+                    <label for="role-any">
+                      <input
+                        id="role-any"
+                        name="status"
+                        type="radio"
+                        value="all"
+                        data-filter-key="status"
+                        checked
+                      >
+                      <span>Any</span>
+                    </label>
+                    <label for="role-core">
+                      <input
+                        id="role-core"
+                        name="status"
+                        type="radio"
+                        value="core"
+                        data-filter-key="status"
+                      >
+                      <span>Core</span>
+                    </label>
+                    <label for="role-inherited">
+                      <input
+                        id="role-inherited"
+                        name="status"
+                        type="radio"
+                        value="inherited"
+                        data-filter-key="status"
+                      >
+                      <span>Inherited</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset
+                  class="filter-group filter-group--fieldset"
+                  data-filter-group="resource"
+                >
+                  <legend>Available resources</legend>
+                  <div class="facet-list facet-list--resources">
+                    <label class="facet-option" for="resource-code">
+                      <input
+                        id="resource-code"
+                        name="resource"
+                        type="checkbox"
+                        value="code"
+                        data-filter-key="resource"
+                      >
+                      <span>Code repository</span>
+                      <span class="facet-count" data-facet-count="resource:code"></span>
+                    </label>
+                    <label class="facet-option" for="resource-project">
+                      <input
+                        id="resource-project"
+                        name="resource"
+                        type="checkbox"
+                        value="project"
+                        data-filter-key="resource"
+                      >
+                      <span>Project page</span>
+                      <span
+                        class="facet-count"
+                        data-facet-count="resource:project"
+                      ></span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset
+                  class="filter-group filter-group--fieldset filter-group--advanced"
+                  data-filter-group="match"
+                >
+                  <legend>Multiple categories in one aspect</legend>
+                  <div class="radio-stack">
+                    <label for="match-any">
+                      <input
+                        id="match-any"
+                        name="match"
+                        type="radio"
+                        value="any"
+                        data-filter-key="match"
+                        checked
+                      >
+                      <span>
+                        <strong>Match any selected category</strong>
+                        <small>Broad discovery within each aspect</small>
+                      </span>
+                    </label>
+                    <label for="match-all">
+                      <input
+                        id="match-all"
+                        name="match"
+                        type="radio"
+                        value="all"
+                        data-filter-key="match"
+                      >
+                      <span>
+                        <strong>Require all selected categories</strong>
+                        <small>Find multi-category profiles</small>
+                      </span>
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+          </aside>
+
+          <div class="results-pane" id="matrix-results">
+            <div class="results-toolbar">
+              <div class="results-toolbar__primary">
+                <button
+                  class="filter-trigger"
+                  id="open-mobile-filters"
+                  type="button"
+                  data-action="open-mobile-filters"
+                  aria-haspopup="dialog"
+                  aria-controls="mobile-filter-dialog"
+                >
+                  <span aria-hidden="true" class="filter-trigger__glyph"></span>
+                  Filters
+                  <span class="filter-trigger__count" id="mobile-filter-count" hidden>0</span>
+                </button>
+
+                <div>
+                  <p class="results-count">
+                    <strong id="visible-result-count">304</strong>
+                    <span id="result-count-label">works</span>
+                  </p>
+                  <p
+                    class="query-summary"
+                    id="query-summary"
+                    aria-live="polite"
+                    aria-atomic="true"
+                  >
+                    Showing all Method Profiles
+                  </p>
+                </div>
+              </div>
+
+              <div class="results-toolbar__controls">
+                <label class="select-control" for="sort-select">
+                  <span>Sort</span>
+                  <select id="sort-select" name="sort" data-sort-control>
+                    <option value="date-desc">Newest first</option>
+                    <option value="date-asc">Oldest first</option>
+                    <option value="name-asc">Name A–Z</option>
+                    <option value="name-desc">Name Z–A</option>
+                  </select>
+                </label>
+                <button
+                  class="icon-button"
+                  id="copy-query-link"
+                  type="button"
+                  data-action="copy-query-link"
+                  aria-label="Copy a link to these results"
+                  title="Copy a link to these results"
+                >
+                  Copy link
+                </button>
+                <button
+                  class="icon-button"
+                  id="export-filtered-results"
+                  type="button"
+                  data-action="export-results"
+                  aria-label="Download all matching works as CSV"
+                  title="Download all matching works as CSV"
+                >
+                  Export
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="active-filter-region"
+              id="active-filter-region"
+              aria-labelledby="active-filter-label"
+              hidden
+            >
+              <span class="active-filter-region__label" id="active-filter-label">
+                Active filters
+              </span>
+              <div
+                class="active-filter-list"
+                id="active-filter-list"
+                data-active-filter-list
+              ></div>
+              <button
+                class="text-button"
+                id="clear-active-filters"
+                type="button"
+                data-action="clear-all-filters"
+              >
+                Clear all
+              </button>
+            </div>
+
+            <details class="research-landscape" id="research-landscape">
+              <summary>
+                <span>
+                  <strong>Descriptive landscape</strong>
+                  <small>Updates with the current result set</small>
+                </span>
+                <span class="research-landscape__hint">Explore distributions</span>
+              </summary>
+              <div class="research-landscape__body">
+                <section aria-labelledby="landscape-years-title">
+                  <div class="landscape-heading">
+                    <h3 id="landscape-years-title">Works by year</h3>
+                    <p>Click a bar to filter the profiles to that year.</p>
+                  </div>
+                  <div
+                    class="landscape-years"
+                    id="landscape-years"
+                    aria-label="Filtered works by year"
+                  ></div>
+                </section>
+                <section aria-labelledby="landscape-axes-title">
+                  <div class="landscape-heading">
+                    <h3 id="landscape-axes-title">Category distribution</h3>
+                    <p>
+                      Counts are descriptive assignments; multi-category works
+                      may appear more than once within an aspect.
+                    </p>
+                  </div>
+                  <div
+                    class="landscape-axes"
+                    id="landscape-axes"
+                    aria-label="Filtered taxonomy-category distributions"
+                  ></div>
+                </section>
+              </div>
+            </details>
+
+            <div
+              class="matrix-status"
+              id="matrix-status"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              Loading Method Profiles…
+            </div>
+
+            <section
+              class="results-surface"
+              id="results-surface"
+              aria-labelledby="results-heading"
+              aria-busy="true"
+            >
+              <div class="results-surface__heading">
+                <div>
+                  <p class="section-kicker">Method Profiles</p>
+                  <h3 id="results-heading">Profile results</h3>
+                </div>
+                <p>
+                  <span class="role-key role-key--core">Core</span>
+                  introduced, changed, or centrally analyzed
+                  <span class="role-key role-key--inherited">Inherited</span>
+                  explicitly adopted
+                </p>
+              </div>
+
+              <div
+                class="table-region"
+                id="results-table-region"
+                tabindex="0"
+                aria-label="Scrollable Method Profile results"
+              >
+                <table class="results-table" id="matrix-results-table">
+                  <caption class="visually-hidden">
+                    Speculative decoding works and their four-aspect Method Profiles
+                  </caption>
+                  <colgroup>
+                    <col class="results-table__select-column">
+                    <col class="results-table__work-column">
+                    <col class="results-table__date-column">
+                    <col class="results-table__axis-column">
+                    <col class="results-table__axis-column">
+                    <col class="results-table__axis-column">
+                    <col class="results-table__axis-column">
+                    <col class="results-table__resources-column">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <span class="visually-hidden">Select for comparison</span>
+                      </th>
+                      <th scope="col">Work</th>
+                      <th scope="col">
+                        <button
+                          class="table-sort"
+                          type="button"
+                          data-sort-by="date"
+                          data-action="toggle-date-sort"
+                          aria-label="Sort results by date"
+                        >
+                          Date
+                        </button>
+                      </th>
+                      <th scope="col" data-axis="draftSource">Draft Source</th>
+                      <th scope="col" data-axis="draftGeometry">Draft Geometry</th>
+                      <th scope="col" data-axis="verificationFidelity">
+                        Verification Fidelity
+                      </th>
+                      <th scope="col" data-axis="runtimeExecution">Runtime Execution</th>
+                      <th scope="col">Resources</th>
+                    </tr>
+                  </thead>
+                  <tbody id="results-table-body" data-results-target="table">
+                    <tr id="results-loading-row">
+                      <td colspan="8">
+                        <div class="loading-row" aria-hidden="true">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <span class="visually-hidden">Loading Method Profiles</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div
+              class="result-card-list"
+              id="results-card-list"
+              data-results-target="cards"
+              role="list"
+              aria-label="Method Profile results"
+              >
+                <article
+                  class="result-card result-card--loading"
+                  role="listitem"
+                  aria-hidden="true"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </article>
+              </div>
+
+              <div class="empty-state" id="no-results" data-empty-state hidden>
+                <p class="empty-state__eyebrow">No matching profile</p>
+                <h4>No works match every active constraint.</h4>
+                <p>
+                  Try including inherited mechanisms or remove the most
+                  restrictive axis filter.
+                </p>
+                <div class="empty-state__actions">
+                  <button
+                    class="button button--primary"
+                    type="button"
+                    data-action="include-inherited"
+                  >
+                    Include inherited
+                  </button>
+                  <button
+                    class="button button--secondary"
+                    type="button"
+                    data-action="clear-all-filters"
+                  >
+                    Clear all filters
+                  </button>
+                </div>
+              </div>
+
+              <div class="error-state" id="matrix-error" data-error-state hidden>
+                <p class="empty-state__eyebrow">Data unavailable</p>
+                <h4>The interactive Method Profiles could not be loaded.</h4>
+                <p>
+                  The complete profiles remain available in the companion overview.
+                </p>
+                <a
+                  class="button button--primary"
+                  href="README.md"
+                >
+                  Browse all profiles
+                </a>
+              </div>
+
+              <nav
+                class="pagination"
+                id="results-pagination"
+                aria-label="Method Profile result pages"
+              >
+                <label class="select-control select-control--rows" for="page-size-select">
+                  <span>Rows</span>
+                  <select id="page-size-select" name="page_size" data-page-size-control>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="all">All</option>
+                  </select>
+                </label>
+                <p id="pagination-summary">1–25 of 304</p>
+                <div class="pagination__buttons">
+                  <button
+                    class="pagination__button"
+                    id="previous-page"
+                    type="button"
+                    data-action="previous-page"
+                    disabled
+                  >
+                    Previous
+                  </button>
+                  <button
+                    class="pagination__button"
+                    id="next-page"
+                    type="button"
+                    data-action="next-page"
+                  >
+                    Next
+                  </button>
+                </div>
+              </nav>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside
+      class="compare-tray"
+      id="compare-tray"
+      data-compare-tray
+      aria-labelledby="compare-tray-title"
+      hidden
+    >
+      <div class="compare-tray__inner">
+        <div>
+          <p class="compare-tray__eyebrow">Selected for comparison</p>
+          <h2 id="compare-tray-title">
+            <span id="compare-selection-count">0</span> of 4 works
+          </h2>
+        </div>
+        <ul
+          class="compare-selection-list"
+          id="compare-selection-list"
+          aria-label="Selected works"
+        ></ul>
+        <div class="compare-tray__actions">
+          <button
+            class="text-button text-button--light"
+            id="clear-comparison"
+            type="button"
+            data-action="clear-comparison"
+          >
+            Clear
+          </button>
+          <button
+            class="button button--light"
+            id="open-compare-dialog"
+            type="button"
+            data-action="open-compare"
+            aria-haspopup="dialog"
+            aria-controls="compare-dialog"
+            disabled
+          >
+            Compare works
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <dialog
+      class="dialog detail-dialog"
+      id="detail-dialog"
+      data-dialog="detail"
+      aria-labelledby="detail-dialog-title"
+    >
+      <div class="dialog__shell">
+        <header class="dialog__header">
+          <div>
+            <p class="dialog__eyebrow">Method Profile</p>
+            <h2 id="detail-dialog-title" data-detail-slot="short_name">Work detail</h2>
+          </div>
+          <button
+            class="dialog__close"
+            id="close-detail-dialog"
+            type="button"
+            data-action="close-detail"
+            aria-label="Close work detail"
+          >
+            <span aria-hidden="true"></span>
+          </button>
+        </header>
+
+        <div class="dialog__body">
+          <p class="detail-date" data-detail-slot="date"></p>
+          <p class="detail-title" data-detail-slot="title"></p>
+
+          <nav
+            class="detail-links"
+            id="detail-links"
+            data-detail-slot="links"
+            aria-label="Work resources"
+          ></nav>
+
+          <div class="detail-profile" id="detail-profile">
+            <section class="detail-axis" data-axis="draftSource">
+              <p class="detail-axis__index">01</p>
+              <h3>Draft Source</h3>
+              <div
+                class="detail-axis__leaves"
+                data-detail-axis="draftSource"
+              ></div>
+            </section>
+            <section class="detail-axis" data-axis="draftGeometry">
+              <p class="detail-axis__index">02</p>
+              <h3>Draft Geometry</h3>
+              <div
+                class="detail-axis__leaves"
+                data-detail-axis="draftGeometry"
+              ></div>
+            </section>
+            <section class="detail-axis" data-axis="verificationFidelity">
+              <p class="detail-axis__index">03</p>
+              <h3>Verification Fidelity</h3>
+              <div
+                class="detail-axis__leaves"
+                data-detail-axis="verificationFidelity"
+              ></div>
+            </section>
+            <section class="detail-axis" data-axis="runtimeExecution">
+              <p class="detail-axis__index">04</p>
+              <h3>Runtime Execution</h3>
+              <div
+                class="detail-axis__leaves"
+                data-detail-axis="runtimeExecution"
+              ></div>
+            </section>
+          </div>
+
+          <aside class="semantics-note">
+            <strong>Reading the profile</strong>
+            <p>
+              Core marks a category introduced, substantively changed, or
+              centrally analyzed by the work. Inherited marks an explicitly
+              adopted category. The symbol -- indicates that the reported
+              research unit has no explicit category assignment in that
+              aspect.
+            </p>
+          </aside>
+        </div>
+
+        <footer class="dialog__footer">
+          <button
+            class="button button--secondary"
+            id="copy-detail-link"
+            type="button"
+            data-action="copy-detail-link"
+          >
+            Copy link
+          </button>
+          <button
+            class="button button--primary"
+            id="detail-compare-toggle"
+            type="button"
+            data-action="toggle-detail-comparison"
+          >
+            Add to compare
+          </button>
+        </footer>
+      </div>
+    </dialog>
+
+    <dialog
+      class="dialog compare-dialog"
+      id="compare-dialog"
+      data-dialog="compare"
+      aria-labelledby="compare-dialog-title"
+    >
+      <div class="dialog__shell">
+        <header class="dialog__header">
+          <div>
+            <p class="dialog__eyebrow">Side-by-side Method Profiles</p>
+            <h2 id="compare-dialog-title">Compare selected works</h2>
+          </div>
+          <button
+            class="dialog__close"
+            id="close-compare-dialog"
+            type="button"
+            data-action="close-compare"
+            aria-label="Close comparison"
+          >
+            <span aria-hidden="true"></span>
+          </button>
+        </header>
+
+        <div class="dialog__body compare-dialog__body">
+          <p class="compare-intro">
+            Shared taxonomy categories are highlighted for orientation only.
+            The taxonomy does not score or rank works.
+          </p>
+          <div
+            class="compare-table-region"
+            tabindex="0"
+            aria-label="Scrollable work comparison"
+          >
+            <table class="compare-table" id="compare-table">
+              <caption class="visually-hidden">
+                Four-axis comparison of selected speculative decoding works
+              </caption>
+              <thead id="compare-table-head" data-compare-target="head"></thead>
+              <tbody id="compare-table-body" data-compare-target="body"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <footer class="dialog__footer">
+          <button
+            class="button button--secondary"
+            id="copy-compare-link"
+            type="button"
+            data-action="copy-compare-link"
+          >
+            Copy comparison link
+          </button>
+          <button
+            class="button button--primary"
+            id="export-comparison"
+            type="button"
+            data-action="export-comparison"
+          >
+            Export selected CSV
+          </button>
+        </footer>
+      </div>
+    </dialog>
+
+    <dialog
+      class="dialog mobile-filter-dialog"
+      id="mobile-filter-dialog"
+      data-dialog="mobile-filters"
+      aria-labelledby="mobile-filter-dialog-title"
+    >
+      <div class="dialog__shell">
+        <header class="dialog__header">
+          <div>
+            <p class="dialog__eyebrow">Refine corpus</p>
+            <h2 id="mobile-filter-dialog-title">Filters</h2>
+          </div>
+          <button
+            class="dialog__close"
+            id="close-mobile-filters"
+            type="button"
+            data-action="close-mobile-filters"
+            aria-label="Close filters"
+          >
+            <span aria-hidden="true"></span>
+          </button>
+        </header>
+
+        <div
+          class="dialog__body mobile-filter-dialog__body"
+          id="mobile-filter-content"
+          data-mobile-filter-mount
+        >
+          <p class="mobile-filter-placeholder" data-mobile-filter-placeholder>
+            Filter controls are loading…
+          </p>
+        </div>
+
+        <footer class="dialog__footer mobile-filter-dialog__footer">
+          <button
+            class="button button--secondary"
+            id="reset-mobile-filters"
+            type="button"
+            data-action="reset-mobile-filters"
+          >
+            Reset
+          </button>
+          <button
+            class="button button--primary"
+            id="apply-mobile-filters"
+            type="button"
+            data-action="apply-mobile-filters"
+          >
+            Show <span id="mobile-apply-result-count">304</span> works
+          </button>
+        </footer>
+      </div>
+    </dialog>
+
+    <template id="result-row-template">
+      <tr data-record-row>
+        <td class="result-select-cell">
+          <label class="compare-checkbox">
+            <input type="checkbox" data-action="toggle-comparison">
+            <span class="visually-hidden" data-slot="compare-label">
+              Select work for comparison
+            </span>
+          </label>
+        </td>
+        <th scope="row" class="work-cell">
+          <button type="button" class="work-link" data-action="open-detail">
+            <strong data-slot="short_name"></strong>
+            <span data-slot="title"></span>
+          </button>
+        </th>
+        <td class="date-cell" data-slot="date"></td>
+        <td data-axis="draftSource">
+          <div class="leaf-list" data-slot="draftSource"></div>
+        </td>
+        <td data-axis="draftGeometry">
+          <div class="leaf-list" data-slot="draftGeometry"></div>
+        </td>
+        <td data-axis="verificationFidelity">
+          <div class="leaf-list" data-slot="verificationFidelity"></div>
+        </td>
+        <td data-axis="runtimeExecution">
+          <div class="leaf-list" data-slot="runtimeExecution"></div>
+        </td>
+        <td class="resource-cell">
+          <div class="resource-list" data-slot="resources"></div>
+        </td>
+      </tr>
+    </template>
+
+    <template id="result-card-template">
+      <article class="result-card" data-record-card role="listitem">
+        <header class="result-card__header">
+          <div>
+            <button type="button" class="work-link" data-action="open-detail">
+              <strong data-slot="short_name"></strong>
+            </button>
+            <p data-slot="title"></p>
+          </div>
+          <time data-slot="date"></time>
+        </header>
+        <dl class="result-card__profile">
+          <div data-axis="draftSource">
+            <dt>Draft Source</dt>
+            <dd class="leaf-list" data-slot="draftSource"></dd>
+          </div>
+          <div data-axis="draftGeometry">
+            <dt>Draft Geometry</dt>
+            <dd class="leaf-list" data-slot="draftGeometry"></dd>
+          </div>
+          <div data-axis="verificationFidelity">
+            <dt>Verification</dt>
+            <dd class="leaf-list" data-slot="verificationFidelity"></dd>
+          </div>
+          <div data-axis="runtimeExecution">
+            <dt>Runtime</dt>
+            <dd class="leaf-list" data-slot="runtimeExecution"></dd>
+          </div>
+        </dl>
+        <footer class="result-card__footer">
+          <div class="resource-list" data-slot="resources"></div>
+          <label class="compare-checkbox compare-checkbox--labeled">
+            <input type="checkbox" data-action="toggle-comparison">
+            <span>Compare</span>
+          </label>
+        </footer>
+      </article>
+    </template>
+
+    <template id="leaf-chip-template">
+      <span class="leaf-chip" data-leaf-chip>
+        <span data-slot="leaf"></span>
+        <small data-slot="role"></small>
+      </span>
+    </template>
+
+    <template id="active-filter-template">
+      <button class="active-filter-chip" type="button" data-action="remove-filter">
+        <span data-slot="filter-label"></span>
+        <span class="active-filter-chip__remove" aria-hidden="true"></span>
+      </button>
+    </template>
+
+    <div
+      class="explorer-toast"
+      id="explorer-toast"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+      hidden
+    ></div>
+
+    <footer class="site-footer" id="methodology">
+      <div class="page-frame site-footer__grid">
+        <div class="site-footer__brand">
+          <p class="eyebrow">Profile semantics</p>
+          <h2>A navigational resource, not a paper ranking.</h2>
+          <p>
+            The explorer preserves the complete four-aspect Method Profile of
+            every included work and the distinction between core and
+            inherited category assignments.
+          </p>
+        </div>
+
+        <dl class="semantics-list">
+          <div>
+            <dt><span class="role-key role-key--core">Core</span></dt>
+            <dd>Introduced, substantively changed, or centrally analyzed.</dd>
+          </div>
+          <div>
+            <dt><span class="role-key role-key--inherited">Inherited</span></dt>
+            <dd>Explicitly adopted, but not a central contribution.</dd>
+          </div>
+          <div>
+            <dt><span class="role-key role-key--none">—</span></dt>
+            <dd>
+              The symbol -- indicates that the reported research unit has no
+              explicit category assignment in that aspect.
+            </dd>
+          </div>
+        </dl>
+
+        <nav class="site-footer__links" aria-label="Project resources">
+          <h3>Project resources</h3>
+          <a href="#overview">Overview</a>
+          <a href="#explorer">Interactive Method Profiles</a>
+          <a href="#taxonomy-landscape">Four-axis taxonomy</a>
+          <a href="https://www.preprints.org/manuscript/PREPRINT-LINK-PENDING">
+            Survey paper
+          </a>
+          <a href="LICENSE">License</a>
+          <a
+            href="https://github.com/LifeIsSoSolong/awesome-speculative-decoding"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub repository
+          </a>
+        </nav>
+      </div>
+
+      <div class="page-frame site-footer__bottom">
+        <p>Awesome Speculative Decoding · Method Profiles</p>
+        <a href="#site-header">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>

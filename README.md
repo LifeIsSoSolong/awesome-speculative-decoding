@@ -4,7 +4,7 @@
 
 [![Awesome](https://img.shields.io/badge/Awesome-0066CC?style=for-the-badge&logo=awesome-lists&logoColor=white)](https://github.com/sindresorhus/awesome)
 ![Method Profiles](https://img.shields.io/badge/Method%20Profiles-304%20works-2563eb?style=for-the-badge)
-[![Survey Paper](https://img.shields.io/badge/Survey-Paper-B31B1B?style=for-the-badge)](https://www.preprints.org/manuscript/PREPRINT-LINK-PENDING)
+[![Survey Paper](https://img.shields.io/badge/Survey-Paper-B31B1B?style=for-the-badge)](https://www.preprints.org/manuscript/202608.0746)
 [![Method Profiles Explorer](https://img.shields.io/badge/Method%20Profiles%20Explorer-Live-0F766E?style=for-the-badge)](https://lifeissosolong.github.io/awesome-speculative-decoding/)
 
 Our survey organizes speculative decoding from a **systems co-design perspective** across four connected aspects: **Draft Source**, **Draft Geometry**, **Verification Fidelity**, and **Runtime Execution**. This companion repository provides Method Profiles for all 304 included works, including category assignments, paper and code links, a complete chronological table, and an interactive explorer for filtering, comparing, sharing, and exporting results.
@@ -13,6 +13,7 @@ Our survey organizes speculative decoding from a **systems co-design perspective
 
 ## 📰 News
 
+- **2026&#8209;08&#8209;12** The [survey preprint](https://doi.org/10.20944/preprints202608.0746.v1) is now available.
 - **2026&#8209;07&#8209;23** The [Interactive Method Profiles Explorer](https://lifeissosolong.github.io/awesome-speculative-decoding/) is now open.
 - **2026&#8209;07&#8209;20** Initial release: 304 Method Profiles were organized across four systems-view aspects.
 
@@ -20,14 +21,17 @@ Our survey organizes speculative decoding from a **systems co-design perspective
 
 If you find this survey or repository useful, please consider citing our survey:
 
-[*From Draft-Then-Verify to Systems Co-Design: A Survey of Speculative Decoding for Autoregressive Large Language Models*](https://www.preprints.org/manuscript/PREPRINT-LINK-PENDING)
+[*From Draft-Then-Verify to Systems Co-Design: A Survey of Speculative Decoding for Autoregressive Large Language Models*](https://doi.org/10.20944/preprints202608.0746.v1)
 
 ```bibtex
-@misc{zhao2026draftthenverify,
+@article{zhao2026draftthenverify,
   title = {From {Draft-Then-Verify} to {Systems Co-Design}: A Survey of Speculative Decoding for Autoregressive Large Language Models},
   author = {Zhao, Kaikai and Liu, Zhaoxiang and Jiang, Che and Chen, Ping and Wang, Xin and Tian, Kai and Wang, Ning and Wang, Yuru and Shen, Yi and Yan, Jiangze and Hua, Minjie and Zhang, Wenjing and Wang, Xiang and Wang, Kai and Zhang, Kaiyan and Sun, Youbang and Ding, Ning and Lian, Shiguo and Zhou, Bowen},
+  journal = {Preprints},
   year = {2026},
-  url = {https://www.preprints.org/manuscript/PREPRINT-LINK-PENDING}
+  number = {2026080746},
+  doi = {10.20944/preprints202608.0746.v1},
+  url = {https://doi.org/10.20944/preprints202608.0746.v1}
 }
 ```
 

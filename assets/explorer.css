@@ -397,6 +397,30 @@ h4 {
   font-variant-numeric: tabular-nums;
 }
 
+.hero__snapshot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px 14px;
+  max-width: 720px;
+  margin-top: 20px;
+  padding-left: 14px;
+  border-left: 3px solid var(--navy);
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.hero__snapshot a {
+  color: var(--navy);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.hero__snapshot a:hover {
+  text-decoration: underline;
+}
+
 .hero__instrument {
   padding: 28px;
   border: 1px solid var(--border);
@@ -1968,9 +1992,9 @@ h4 {
   line-height: 1.2;
 }
 
-.site-footer__brand > p:last-child {
+.site-footer__brand > p:not(.eyebrow) {
   max-width: 580px;
-  margin: 0;
+  margin: 0 0 14px;
   color: #b7c7da;
   font-size: 13px;
   line-height: 1.7;

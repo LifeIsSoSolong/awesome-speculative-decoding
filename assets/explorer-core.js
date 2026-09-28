@@ -7,6 +7,16 @@ export const AXIS_IDS = [
 
 export const MAX_COMPARE = 4;
 
+export function recordIdFromHash(hash, records) {
+  if (!hash.startsWith("#paper-")) return null;
+  try {
+    const id = decodeURIComponent(hash.slice("#paper-".length));
+    return records.some((record) => record.id === id) ? id : null;
+  } catch {
+    return null;
+  }
+}
+
 export const AXIS_QUERY_PARAMS = {
   draftSource: "source",
   draftGeometry: "geometry",

@@ -1,0 +1,2 @@
+# Preserve the canonical CSV bytes and checksum across platforms.
+data/coding_matrix.csv -text whitespace=trailing-space,space-before-tab,cr-at-eol

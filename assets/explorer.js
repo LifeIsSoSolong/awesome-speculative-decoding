@@ -9,6 +9,7 @@ import {
   mechanismNeighbors,
   paginateRecords,
   parseState,
+  recordIdFromHash,
   recordsToCsv,
   selectedFilterCount,
   serializeState,
@@ -297,11 +298,11 @@ function createLeafChip(assignment, axisId, { shared = false } = {}) {
 function renderAxisAssignments(container, assignments, axisId, options = {}) {
   container.replaceChildren();
   if (!assignments.length) {
-    const empty = makeElement("span", "leaf-chip leaf-chip--none", "Not fixed");
+    const empty = makeElement("span", "leaf-chip leaf-chip--none", "No supported assignment");
     empty.dataset.axis = axisId;
     empty.dataset.role = "none";
     empty.title =
-      "The symbol -- indicates that the reported research unit has no explicit category assignment in that aspect.";
+      "The symbol -- means no supported assignment on that axis; it is not a negative category label.";
     container.append(empty);
     return;
   }
@@ -390,7 +391,7 @@ function activeFilterItems(targetState = state) {
     for (const value of targetState.axes[axisId]) {
       const label =
         value === "unclassified"
-          ? "Not fixed"
+          ? "No supported assignment"
           : leafMeta(axisId, value)?.label ?? value;
       items.push({
         type: "axis",
@@ -728,7 +729,7 @@ function openDetail(recordId, { updateHash = true } = {}) {
   updateDetailCompareButton(record.id);
   renderMechanismNeighbors(record);
   if (!elements.detailDialog.open) elements.detailDialog.showModal();
-  if (updateHash) writeHistory("replace", { hash: `#paper-${record.id}` });
+  if (updateHash) writeHistory("replace", { hash: `#paper-${encodeURIComponent(record.id)}` });
 }
 
 function closeDetail({ clearHash = true } = {}) {
@@ -890,7 +891,7 @@ function handleAction(target) {
   if (action === "close-compare") elements.compareDialog.close();
   if (action === "copy-detail-link" && currentDetailId) {
     const url = new URL(window.location.href);
-    url.hash = `paper-${currentDetailId}`;
+    url.hash = `paper-${encodeURIComponent(currentDetailId)}`;
     copyText(url.href, "Work link copied.");
   }
   if (action === "toggle-detail-comparison" && currentDetailId) {
@@ -1028,8 +1029,8 @@ function bindEvents() {
 }
 
 function handleLocationHash() {
-  const match = window.location.hash.match(/^#paper-(AS\d{4}_B\d{4})$/);
-  if (match) openDetail(match[1], { updateHash: false });
+  const recordId = recordIdFromHash(window.location.hash, dataset.records);
+  if (recordId) openDetail(recordId, { updateHash: false });
   else if (currentDetailId) closeDetail({ clearHash: false });
 }
 
